@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function validateMail(mail) {
+        let regexp = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+        if (regexp.test(mail)) {
+            return true;
+        }return false;
+    }
+    // chuoi dung
+        let mailUs = "a@gmail.com";
+        document.write(validateMail(mailUs));
+        // chuoi sai
+        mailUs = "@#abc@gmail.com";
+        document.write(validateMail(mailUs));
+</script>
+
+</body>
+</html>
